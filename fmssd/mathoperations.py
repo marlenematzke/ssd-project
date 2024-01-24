@@ -3,7 +3,7 @@ import numpy as np
 
 # calculate the Euclidean distance
 def euclidean_distance(list_ref, list_comp, vectors):
-    """	
+    """
     takes: list of reference indices, list of comparison indices, vector matrix
     returns: list of Euclidean distances
     """
@@ -42,7 +42,7 @@ def discrete_fourier_transform(y, time_step):
 # convert the array that was read as dtype=float into a dtype=complex array
 def real_to_complex_matrix(matrix):
     """
-    takes: matrix with time column at index 0 
+    takes: matrix with time column at index 0
            and real and imaginary parts in separate columns (m+1 x n)
     returns: matrix with complex numbers (m/2 x n), time vector (n)
     """
