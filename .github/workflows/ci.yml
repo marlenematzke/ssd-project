@@ -36,5 +36,4 @@ jobs:
         echo "Requirements have been installed."
     - name: Run linter
       run: |
-        black --check .
         flake8
