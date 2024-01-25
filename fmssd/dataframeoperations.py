@@ -1,6 +1,3 @@
-import pandas as pd
-
-
 def check_if_significant(data_in, thresh):
     """
     check if variance of a column is above threshold
