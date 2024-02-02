@@ -19,6 +19,8 @@ def check_if_significant_np(data_in, thresh):
     takes: numpy array, threshold
     returns: numpy array with insignificant columns removed
     """
+    if thresh < 0:
+        raise ValueError()
     indices = np.nonzero(np.var(data_in, axis=1) > thresh)
     data_out = data_in[indices]
     return data_out, indices
